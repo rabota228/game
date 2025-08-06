@@ -58,5 +58,5 @@ int main()
         Input();
         Logik();
     }
-    cin.get();
+    //cin.get();
 }
