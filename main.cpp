@@ -31,7 +31,6 @@ void Draw()//рисование карты
         {
             if(j == 0 || j == width -1)
             cout << "#";
-            else
             cout << " ";
         }
         cout << endl;
