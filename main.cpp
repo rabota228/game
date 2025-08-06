@@ -5,7 +5,7 @@ bool gameOver;
 const int width = 20;
 const int height = 20;
 int x, y, fruitX, fruitY, score;
-enum eDirection {STOP = 0; LEFT, RIGHT, UP, DOWN}
+enum eDirection {STOP = 0; LEFT, RIGHT, UP, DOWN};
 eDirection dir;
 
 void Setup()//настройка
@@ -23,7 +23,7 @@ void Draw()//рисование карты
     system("clear");
     for (int i = 0; i < width; i++)
         cout << "#";
-        cout << endl;
+    cout << endl;
 
     for(int i = 0; i < height; i++)
     {
@@ -31,6 +31,7 @@ void Draw()//рисование карты
         {
             if(j == 0 || j == width -1)
             cout << "#";
+            else
             cout << " ";
         }
         cout << endl;
@@ -39,7 +40,7 @@ void Draw()//рисование карты
     for (int i = 0; i < width; i++)
     {
         cout << "#";
-        cout << endl;
+    cout << endl;
     }
 }
 void Input()//отслеживает все нажатия от юзера
